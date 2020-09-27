@@ -42,7 +42,7 @@ public class week2d {
         case 4:
             System.out.println("Exit\n");
             sc.close();
-            
+            break;
         default:
             System.out.println("Enter a no. ranging from 1 to 4\n");
         }
