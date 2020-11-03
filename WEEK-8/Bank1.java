@@ -36,8 +36,12 @@ class Curr_acct extends Account {
     }
 
     void withBal(double amt) {
+          if (this.bal == 0 || amt > this.bal) {
+            System.out.println("withdrawal not possible");
+          }else{
         this.bal -= amt;
         checkBal();
+          }
     }
 
     void checkBal() {
@@ -67,7 +71,11 @@ class Sav_acct extends Account {
     }
 
     void withBal(double amt) {
+        if (this.bal == 0 || amt > this.bal) {
+            System.out.println("withdrawal not possible");
+        }else{
         this.bal -= amt;
+        }
 
     }
 
