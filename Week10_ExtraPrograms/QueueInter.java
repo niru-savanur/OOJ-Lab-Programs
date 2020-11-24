@@ -30,7 +30,7 @@ interface IntQueue {
        
  public int delete_front() {
  if(front>rear) {
- System.out.println("Stack underflow.");
+ System.out.println("Queue underflow.");
  front = 0;
  rear = -1;
  return -1;
